@@ -71,11 +71,11 @@
 // introScriptRH2base
 @font-face {
 	font-family: 'introScriptRH2base';
-	src: url('../../fonts/introScriptRH2base.eot');
-	src: local('☺'), 
-		url('../../fonts/introScriptRH2base.woff') format('woff'), 
-		url('../../fonts/introScriptRH2base.ttf') format('truetype'), 
-		url('../../fonts/introScriptRH2base.svg') format('svg');
+	src: url('../fonts/introScriptRH2base.eot');
+	src: local('introScriptRH2base'), 
+		url('../fonts/introScriptRH2base.woff') format('woff'), 
+		url('../fonts/introScriptRH2base.ttf') format('truetype'), 
+		url('../fonts/introScriptRH2base.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
