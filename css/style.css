@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active, a:visited {
+  outline: none;
+  color: inherit;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Circe";
+  src: url("../../fonts/Circe-Regular.eot");
+  src: local("Circe"), local("Circe-Regular"), url("Circe-Regular.eot?#iefix") format("embedded-opentype"), url("Circe-Regular.woff") format("woff"), url("Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../../fonts/Circe-ExtraLight.eot");
+  src: local("Circe ExtraLight"), local("Circe-ExtraLight"), url("Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("Circe-ExtraLight.woff") format("woff"), url("Circe-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../../fonts/Circe-Thin.eot");
+  src: local("Circe Thin"), local("Circe-Thin"), url("Circe-Thin.eot?#iefix") format("embedded-opentype"), url("Circe-Thin.woff") format("woff"), url("Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../../fonts/Circe-Light.eot");
+  src: local("Circe Light"), local("Circe-Light"), url("Circe-Light.eot?#iefix") format("embedded-opentype"), url("Circe-Light.woff") format("woff"), url("Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../../fonts/Circe-Bold.eot");
+  src: local("Circe Bold"), local("Circe-Bold"), url("Circe-Bold.eot?#iefix") format("embedded-opentype"), url("Circe-Bold.woff") format("woff"), url("Circe-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("../../fonts/Circe-ExtraBold.eot");
+  src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("Circe-ExtraBold.woff") format("woff"), url("Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "introScriptRH2base";
+  src: url("../../fonts/introScriptRH2base.eot");
+  src: local("☺"), url("../../fonts/introScriptRH2base.woff") format("woff"), url("../../fonts/introScriptRH2base.ttf") format("truetype"), url("../../fonts/introScriptRH2base.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #fbebea;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button a {
+  display: inline-block;
+  font-family: "Circe";
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 20px 66px;
+  background-color: #f50049;
+  border-radius: 30px;
+}
+.button a:hover {
+  color: #f50049;
+  background-color: #fbebea;
+  border: 2px solid #f50049;
+  border-radius: 30px;
+  padding: 18px 64px;
+}
+
+.header {
+  background: url(../img/header/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 100px;
+  overflow: hidden;
+}
+.header-nav {
+  color: #2d2829;
+  margin-top: 60px;
+}
+.header-nav__list {
+  display: flex;
+}
+.header-nav__logo {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header-nav__items {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Circe";
+  text-transform: uppercase;
+  color: #2d2829;
+  font-size: 13px;
+  font-weight: 700;
+}
+.header-nav__items a:visited {
+  color: #2d2829;
+}
+.header-nav__item {
+  margin-left: 40px;
+}
+.header-nav__item a:hover {
+  color: #f50049;
+}
+.header-nav__item:nth-child(1) {
+  margin-left: 45px;
+}
+.header-nav__tel {
+  margin-left: auto;
+  align-self: flex-end;
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 15px;
+}
+.header-nav__tel a {
+  color: #2d2829;
+}
+.header-nav__tel a:hover {
+  color: #f50049;
+}
+.header-body {
+  margin-top: 160px;
+}
+.header-body__title {
+  font-family: "Playfair Display", serif;
+  font-size: 78px;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+.header-body__subtitle {
+  font-family: "introScriptRH2base";
+  font-size: 41px;
+  margin-top: 30px;
+  color: #32313d;
+}
+.header-body__button {
+  margin-top: 65px;
+}
+.header-bottom {
+  margin-top: 125px;
+  margin-bottom: 255px;
+}
+.header-bottom__items {
+  display: flex;
+}
+.header-bottom__item {
+  display: flex;
+}
+.header-bottom__item:nth-child(2) {
+  margin-left: 70px;
+}
+.header-bottom__text {
+  font-family: "Circe";
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 15px;
+  margin-top: 20px;
+  font-weight: 600;
+}
